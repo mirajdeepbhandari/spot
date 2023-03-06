@@ -1,0 +1,339 @@
+/* for navigation bar code */
+html {
+
+    font-size: 100%;
+}
+
+#topnav {
+
+    background-color: #303030;
+    padding: 0.8rem;
+}
+
+#logo img {
+    margin-left: 2rem;
+}
+
+.ser {
+    font-size: 1.5rem;
+
+}
+
+.sertype {
+    width: 0;
+    border-radius: 5rem;
+    border: 0;
+    outline: 0;
+    transition: all 0.5s linear;
+}
+
+.btn {
+    width: 2.1rem;
+    height: 2.1rem;
+    background-color: rgb(81, 79, 81);
+    position: relative;
+    left: -1.69rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.serwrap {
+    position: relative;
+    left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -0.3rem;
+}
+
+
+.serwrap:hover .sertype {
+    width: 15rem;
+    padding: 0 0.8rem;
+}
+
+#linkbox {
+    position: relative;
+    left: 3.5rem;
+}
+
+#linkbox a {
+
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+
+
+#ham {
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 0.2rem;
+    display: none;
+}
+
+
+#closebtn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+    font-size: 1.7rem;
+}
+
+#closebtn:hover {
+    color: rgb(251, 170, 20) !important;
+}
+
+
+/* for responsive navigation bar */
+
+@media only screen and (max-width: 1050px) {
+
+    #logo img {
+        margin-left: 0rem;
+    }
+
+    #navlinks {
+        height: 25rem;
+        flex-direction: column;
+        position: absolute;
+        background-color: #303030;
+        width: 100%;
+        top: -100%;
+        left: 0;
+        transition: top 0.8s ease-out;
+    }
+
+    #navrowlink {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #linkbox {
+        flex-direction: column;
+        align-items: center;
+        left: 0rem;
+    }
+
+    #ham {
+        display: block;
+    }
+
+    #linkbox a {
+        margin-bottom: 2.7rem;
+    }
+
+
+    #closebtn {
+        display: block;
+    }
+}
+
+/* end of responsive navigation bar */
+
+
+/* landing container section  */
+
+#landimg {
+   
+    background-image: url('../images/1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -70px;
+    background-color: antiquewhite;
+}
+
+.landcontent>h1,
+.landcontent>p,
+.landcontent>button:not(:first-child) {
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+.landcontent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30.5%;
+    padding-left: 3rem;
+    height: auto;
+
+}
+
+.landcontent h1 {
+    font-size: 3.5rem;
+}
+
+#register {
+
+    width: 13rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    background-color: #f66313;
+    color: white;
+    font-family: verdana;
+    letter-spacing: 0.1rem;
+}
+
+/* landing page section responsivenss */
+@media only screen and (max-width: 1295px) {
+
+
+    .landcontent {
+        padding-left: 1rem;
+
+    }
+
+    .landcontent h1 {
+        font-size: 2.5rem;
+    }
+
+    .landcontent p {
+        font-size: 0.8rem;
+    }
+
+    #register {
+
+        font-size: 0.8rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+
+    .landcontent {
+        padding-left: 0.4rem;
+        margin-top: 20.5%;
+
+    }
+
+    .landcontent h1 {
+        font-size: 2rem;
+    }
+
+    .landcontent p {
+        font-size: 0.6rem;
+    }
+
+    #register {
+
+        font-size: 0.6rem;
+        width: 9rem;
+        height: 2rem;
+    }
+    
+    .landcontent>h1,
+    .landcontent>p,
+    .landcontent>button:not(:first-child) {
+        margin-bottom: 0.6rem;
+    }
+
+}
+
+@media only screen and (max-width: 665px) {
+
+
+    html {
+        font-size: 80%;
+    }
+
+    .landcontent {
+
+        margin-top: 20.5%;
+
+
+    }
+
+    .landcontent>h1,
+    .landcontent>p,
+    .landcontent>button:not(:first-child) {
+        margin-bottom: 0.9rem;
+    }
+
+}
+
+@media only screen and (max-width: 522px) {
+
+
+    html {
+        font-size: 55%;
+    }
+
+    .landcontent {
+
+        margin-top: 19%;
+        padding-left: 0.1em;
+
+
+    }
+
+}
+
+@media only screen and (max-width: 402px) {
+
+
+    .landcontent {
+
+        margin-top: 12%;
+
+    }
+
+    .landcontent>h1,
+    .landcontent>p,
+    .landcontent>button:not(:first-child) {
+        margin-bottom: 0.8rem;
+    }
+
+
+}
+
+
+#dancetoursec {
+    background-color: #f66313;
+    background-image: url("../images/m.png"), url("../images/dots2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top, right top;
+  }
+  
+#dtcont{
+
+    text-align: center;
+    color: aliceblue;
+    padding: 4rem;
+}
+
+.tourdes{
+
+    background-color:#303030;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: rgb(226, 219, 219);
+}
+.tourimg{
+    width: 100%;
+}
+#dto{
+
+ color: #f0eceb;
+ font-weight: 100;
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ letter-spacing: 0.3rem;
+ margin-bottom: 1.7rem;
+}

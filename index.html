@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+    <title>Musicology</title>
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+
+
+        <!-- nav part -->
+        <div class="row" id="topnav">
+
+            <div class="col-1" id="logo">
+
+                <img src="images/logo.png" width="90px">
+                <i class="bi bi-list text-white" id="ham" onclick="toggle()"></i>
+
+            </div>
+
+            <div class="col-11" id="navlinks">
+
+                <div class="row justify-content-evenly pt-2" id="navrowlink">
+
+                    <div class="col-8 d-flex justify-content-evenly" id="linkbox">
+                        <a href="#">HOME</a>
+                        <a href="#">PRODUCT</a>
+                        <a href="#">PROMO</a>
+                        <a href="#">ABOUT</a>
+                        <a href="#">CONTACT</a>
+
+                    </div>
+
+                    <div class="col-4">
+                        <div class="serwrap">
+
+                            <input type="search" class="sertype">
+
+                            <a href="#" class="btn">
+                                <i class="bi bi-search text-white ser"></i>
+                            </a>
+
+                        </div>
+                        <i class="bi bi-x-square-fill text-white" id="closebtn" onclick="goup()"></i>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- end of nav part -->
+
+        <div class="row" id="landimg">
+
+            <div class="col-8 ">
+                <section class="landcontent text-white">
+                    <h1>Dance With Us</h1>
+                    <P>
+                        Welcome to Musicology, the ultimate destination for all things dance! <br> Whether you're a
+                        beginner
+                        or an experienced dancer, our website is <br> designed to help you improve your skills, discover
+                        new
+                        styles, and <br>connect with other dancers from around the world.
+                    </P>
+                    <button id="register">REGISTER NOW</button>
+
+                </section>
+
+            </div>
+
+
+        </div>
+
+        <!-- dance tour section -->
+
+        <div class="row justify-content-evenly" id="dancetoursec">
+
+            <div class="col-12" id="dtcont">
+                <h1 id="dto">DANCE TOUR</h1>
+                <P style="font-family: cursive;">WE PROVIDE DANCE TOURS THROUGH WHICH YOU ABLE TO LEARN MORE SKILLS <br>
+                    ABOUT
+                    DIFFERENT MOVES AND TECHNIQUES IN DANCE
+                </P>
+
+
+            </div>
+            <div class="col-md-3">
+                <a href="#"><img src="images/img1.png" class="tourimg"></a>
+                <section class="tourdes">
+                    <h4>AMERICA</h4>
+                    <p style="font-family: cursive; margin-top: 1rem;">Register here to get chance to go AMERICA tour
+                        with 50% off. (Limited Offer)</p>
+
+                </section>
+            </div>
+            <div class="col-md-3">
+                <a href="#"> <img src="images/img2.png" class="tourimg"></a>
+                <section class="tourdes">
+                    <h4>ASIA</h4>
+                    <p style="font-family: cursive; margin-top: 1rem;">Register here to get chance to go AMERICA tour
+                        with 20% off. (Limited Offer)</p>
+
+                </section>
+            </div>
+            <div class="col-md-3">
+                <a href="#"> <img src="images/img3.png" class="tourimg"></a>
+                <section class="tourdes">
+                    <h4>AUSTRALIA</h4>
+                    <p style="font-family: cursive; margin-top: 1rem;">Register here to get chance to go AMERICA tour
+                        with 30% off. (Limited Offer)</p>
+
+                </section>
+            </div>
+
+
+
+        </div>
+
+        <!-- end of main fluid container -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+<script>
+
+    // to show ham list
+    function toggle() {
+        var x = document.getElementById('navlinks');
+        x.style.top = "0"
+    }
+
+    // to hide ham list
+    function goup() {
+        var y = document.getElementById('navlinks');
+        y.style.top = "-100%"
+    }
+</script>
+
+</html>
